@@ -259,6 +259,7 @@ class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide transition={['spin', 'slide']} bgColor='tertiary'>
+            <TweetEmbed id='692527862369357824'></TweetEmbed>
             <Heading size={1} caps fit lineHeight={1.5} textColor='primary'>
               Questions?
             </Heading>
