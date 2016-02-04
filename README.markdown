@@ -1,4 +1,4 @@
-# Spectacle Boilerplate
+# [react-state-driven-observables](http://capaj.github.io/spectacle-react-state-driven-observables)
 
 ## Reference
 
