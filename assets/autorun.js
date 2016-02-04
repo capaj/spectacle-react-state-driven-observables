@@ -15,7 +15,7 @@ const sum2 = observable(() => {
   return numbers2.reduce((a, b) => a + b, 0)
 })
 
-const disposer = autorun(() => console.log(`sum: ${sum1()}, sum2: ${sum2()} at time: ${new Date()*1}`))  // will run or not?
+const disposer = autorun(() => console.log(`sum: ${sum1()}, sum2: ${sum2()} at time: ${new Date() * 1}`))  // will run or not?
 
 // mobservable.transaction(() => {
   // numbers.push(3)

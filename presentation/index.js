@@ -70,7 +70,7 @@ class Presentation extends React.Component {
             <Heading size={1} fit caps>
               Mobservable
             </Heading>
-            <Link href='https://github.com/capaj/spectacle-react-state-driven-observables'>
+            <Link href='https://github.com/mweststrate/mobservable'>
               <Text bold caps textColor='tertiary'>View on Github</Text>
             </Link>
             <Link href='https://github.com/FormidableLabs/spectacle-boilerplate'>
