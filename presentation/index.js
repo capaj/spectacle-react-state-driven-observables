@@ -171,6 +171,9 @@ class Presentation extends React.Component {
             </Appear>
           </Slide>
           <Slide transition={['zoom', 'fade']} bgColor='primary' notes='stateless component having a state'>
+            <Heading size={1} textColor='tertiary'>
+              Alert container
+            </Heading>
             <CodePane
               lang='jsx'
               source={require('raw!../assets/alert-container.example')}
@@ -257,8 +260,9 @@ class Presentation extends React.Component {
           </Slide>
           <Slide transition={['spin', 'slide']} bgColor='tertiary'>
             <Heading size={1} caps fit lineHeight={1.5} textColor='primary'>
-              Made with love in Brno/London by
+              Questions?
             </Heading>
+            <Text textSize={15}>Made with love in Brno/London by</Text>
             <Link href='https://github.com/capaj'>Jiří Špác alias Capaj</Link>
           </Slide>
         </Deck>

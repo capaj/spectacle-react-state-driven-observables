@@ -27,5 +27,3 @@ const AlertContainer = (props) => {
 }
 
 export default observer(AlertContainer)
-
-//
