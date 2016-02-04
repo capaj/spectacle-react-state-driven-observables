@@ -1,0 +1,26 @@
+import React, {PropTypes} from 'react'
+import {observer} from 'mobservable-react'
+import _ from 'lodash'
+
+const BoundInput = (props) => {
+  if (!props.source) {
+    throw new Error('missing property source on the BoundInput')
+  }
+  let {source} = props
+  const {name, validation, onChange} = props
+
+  const defVal = source[name]
+  var propsToPass = _.omit(props, 'onChange')
+
+  return <input value={defVal} defaultValue={defVal} onChange={(ev) => {
+    const {value} = ev.target
+    if (value || value === '') {  // onChange gets triggered even when invalid key is pressed(for example 'a' key on an input of type number)
+      source[name] = value
+    }
+    if (onChange) {
+      onChange(ev)
+    }
+  }} {...propsToPass}/>
+}
+
+export default observer(BoundInput)

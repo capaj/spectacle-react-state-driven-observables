@@ -1,0 +1,5 @@
+import {observable} from 'mobservable'
+const state = observable({inputDemo: 0})
+
+<Text>{state.inputDemo}</Text>
+<BoundInput source={state} name='inputDemo' type='number'/>

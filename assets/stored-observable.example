@@ -1,0 +1,18 @@
+/* global localStorage */
+import {observable, observe} from 'mobservable'
+import _ from 'lodash'
+
+function storedObservable (key, defaultValue, debounce) {
+  let fromStorage = localStorage.getItem(key)
+  const defaultClone = _.cloneDeep(defaultValue)
+  if (fromStorage) {
+    _.merge(defaultClone, JSON.parse(fromStorage))
+  }
+  const obsVal = observable(defaultClone)
+  observe(obsVal, () => {
+    localStorage.setItem(key, JSON.stringify(obsVal))
+  })
+  return obsVal
+}
+
+export default storedObservable

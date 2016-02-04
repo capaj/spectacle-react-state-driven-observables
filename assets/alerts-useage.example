@@ -1,0 +1,4 @@
+<button onClick={() => {
+  alerts.add({html: 'Added at: ' + new Date()})
+}} style={}>Add Alert 'Added at: ' + new Date()</button>
+<button onClick={() => alerts.clear()}>Clear</button>
