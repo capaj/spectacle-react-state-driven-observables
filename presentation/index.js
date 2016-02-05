@@ -220,7 +220,7 @@ class Presentation extends React.Component {
                     ES6 Classes
                   </Heading>
                   <List>
-                    <Appear><ListItem>Any component which is displayed only multiple times at once</ListItem></Appear>
+                    <Appear><ListItem>any component which is displayed multiple times at once</ListItem></Appear>
                     <Appear><ListItem>if a component needs lifecycle methods</ListItem></Appear>
                   </List>
                 </Fill>
